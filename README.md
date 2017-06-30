@@ -6,13 +6,16 @@
 
 ### Description
 
-Looking for a doctor? Type in current symptoms or ailments (e.g., heart disease or sore throat) to find a list of doctors in the Portland, Oregon who can treat the issue, along with their address information. This site uses the BetterDoctor API to retrieve this information. 
+Looking for a doctor? Type in current symptoms or ailments (e.g., heart disease or sore throat) to find a list of doctors in the Portland, Oregon who can treat the issue, along with their address information. This site uses the BetterDoctor API to retrieve this information.
 
 ### Screenshot of website
 
 ![screenshot of project](https://github.com/avocadobravado/javascript-week1/blob/master/img/scs01.png?raw=true)
 
 ![screenshot of project](https://github.com/avocadobravado/javascript-week1/blob/master/img/scs02.png?raw=true)
+
+### View website
+A live version of the site be may be accessed at this [link](rawgit.com/avocadobravado/javascript-week1/master/dist/index.html)
 
 ### Installation
 
