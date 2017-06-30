@@ -15,7 +15,7 @@ Looking for a doctor? Type in current symptoms or ailments (e.g., heart disease 
 ![screenshot of project](https://github.com/avocadobravado/javascript-week1/blob/master/img/scs02.png?raw=true)
 
 ### View website
-A live version of the site be may be accessed at this [link](rawgit.com/avocadobravado/javascript-week1/master/dist/index.html)
+A live version of the site be may be accessed at this [link](http://rawgit.com/avocadobravado/javascript-week1/master/dist/index.html)
 
 ### Installation
 
