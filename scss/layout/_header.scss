@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  padding: 10px 0 0 10px;
+  height: 200px;
+  width: 100vw;
+  // background: linear-gradient(-45deg, #F3B43C, #651C1B);
+  background: url('../../img/cheers.jpg');
+  background-position: top;
+  background-size: cover;
+  h1 {
+    margin: 0;
+  }
+  img {
+    height: 50px;
+    margin-right: 10px;
+  }
+}

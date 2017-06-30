@@ -1,0 +1,20 @@
+{
+  "name": "Better Doctor API",
+  "description": "Better Doctor API",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/avocadobravado/beer-dictionary",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "authors": [
+    "Rose Sponseller"
+  ]
+}
