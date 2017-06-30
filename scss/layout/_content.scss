@@ -2,8 +2,8 @@
   margin: 15px;
   padding: 20px;
   border-radius: 3px;
-  background-color: lighten(#d8c2bc, 12%);
-  // height: 70vh;
+  background-color: lighten($accent, 30%);
+  box-shadow: 10px 10px $headline;
   form {
     display: flex;
     flex-direction: column;
@@ -17,13 +17,30 @@
       padding: 5px 10px;
       border-radius: 3px;
     }
+    label {
+      margin-top: 5%;
+      color: $accent;
+      background-color: $headline;
+      // border-bottom: 5px solid $accent;
+      box-shadow: 4px 5px $accent;
+      border-radius: 4px;
+      padding: 2%;
+      font-family: 'Open Sans';
+      font-size: 2em;
+      width: 60%;
+      margin-right: auto;
+      margin-left: auto;
+    }
     button {
       background: none;
       border: none;
+      color: $headline;
+      font-size: 40px;
       transition: all 0.4s ease-in-out;
       &:focus, &:active, &:hover {
         outline: none;
-        color: #999;
+        background-color: $headline;
+        color: $white;
         cursor: pointer;
       }
     }
@@ -32,11 +49,12 @@
 
 input[type=text] {
   transition: all 0.4s ease-in-out;
-  font-family: 'EB Garamond';
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: $black;
+  // background-color: red;
   &:focus {
-    box-shadow: 1px 1px 1px solid red;
-    border: 1px solid #572540;
     outline: none;
-    background-color: whitesmoke;
+    background-color: $white;
   }
 }

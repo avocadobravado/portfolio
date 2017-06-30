@@ -1,24 +1,22 @@
 body {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Open Sans', serif;
+  letter-spacing: .0175em;
+  color: $black;
 }
-p {
-  font-size: 19px;
-}
-h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 2.5em;
-  font-weight: 300;
-  letter-spacing: .01em;
-  color: white;
-  text-shadow: 1px 1px 1px #292929;
-}
-
 h3, h4 {
   font-family: 'Open Sans Condensed', sans-serif;
-  margin: 0;
-  color: #29213f;
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: $headline;
+  font-weight: 700;
 }
-
+h4 {
+  font-size: 18px;
+}
+p, li {
+  font-size: 17px;
+  line-height: 40px;
+}
 .content-wrapper {
   form {
     text-align: center;
@@ -27,12 +25,8 @@ h3, h4 {
 }
 
 label {
-  font-family: 'Open Sans Condensed';
+  font-family: 'Open Sans';
   font-size: 2em;
-}
-
-strong {
-  color: #29213f;
 }
 
 ::selection {
