@@ -40,7 +40,7 @@ result.data.forEach(function(doctor) {
     // Zip code
     "<li><h4>Zip code:</h4><li>" +
     doctor.practices[0].visit_address.zip +
-    "</li></ul><br>");
+    "</li></ul><hr>");
 
     // Clear input for each submit
     // $('.result').text("");
@@ -52,7 +52,6 @@ $(function() {
 
   var newDoctor = new Doctor();
   var searchInput;
-  // var cityInput;
 
   $('.search-form').submit(function(e) {
     e.preventDefault();
@@ -63,8 +62,6 @@ $(function() {
     $(".result").empty();
 
     newDoctor.getDoctor(searchInput, doctorInfo);
-    // console.log(searchInput);
-    // console.log(searchInput);
 
   });
 });

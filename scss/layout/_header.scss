@@ -5,4 +5,32 @@ nav {
   .nav-wrapper {
     background-color: transparent;
   }
+  .brand-logo {
+    color: $white;
+    transition: all 0.3s ease-in-out;
+    .fa {
+      animation: wiggle 1s 5 alternate ease-in-out;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }

@@ -31,5 +31,17 @@ label {
 
 ::selection {
     color: whitesmoke;
-    background: darken(rebeccapurple, 10%);
+    background: darken($headline, 10%);
+}
+
+nav {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 2em;
+  transition: all 0.5s ease-in-out;
+}
+
+input[type=text] {
+  font-family: 'Open Sans';
 }
