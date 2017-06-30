@@ -1,0 +1,17 @@
+.hero {
+  // background-color: whitesmoke;
+  height: 30vh;
+  position: relative;
+  // top: 500px;
+  // left: 500px;
+  .hero-content {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    // height: 100vh;
+    border-radius: 100%;
+    background-color: tomato;
+  }
+}

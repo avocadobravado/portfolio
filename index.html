@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Better Doctor</title>
-    <!-- <link rel="stylesheet" href="build/css/vendor.css"> UNCOMMENT IF YOU INSTALL ANY CSS COMPONENTS WITH BOWER -->
+    <title>docSearch - Find Doctors in Portland, Oregon</title>
+    <link rel="stylesheet" href="build/css/vendor.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="build/css/styles.css">
     <!--Font Awesome-->
@@ -14,18 +14,35 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Anton|EB+Garamond|Open+Sans+Condensed:300,700" rel="stylesheet">
   </head>
   <body>
+  <nav>
+   <div class="nav-wrapper">
+     <a href="index.html" class="brand-logo">docSearch PDX</a>
+     <ul id="nav-mobile" class="right hide-on-small-and-down">
+       <li><a href="https://www.youtube.com/watch?v=6zkMARyxPXw">Login</a></li>
+       <li><a href="https://www.youtube.com/watch?v=6zkMARyxPXw">Sign Up</a></li>
+     </ul>
+   </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-content">
+    </div>
+  </div>
     <div class="wrapper">
       <!-- <img src="img/pint-glass.png" alt="Cheers!"> -->
-      <h1>Better Doctor</h1>
+      <!-- <h1>docSearch PDX</h1> -->
+    </div>
+    <div class="area">
+      <h1>Feeling blue? Find the doctor for you.</h1>
     </div>
     <div class="content-wrapper">
       <form class="search-form">
-        <label for="search">Search for a doc:</label><br>
+        <label for="search">Search for Portland-area doctors:</label><br>
         <div class="input-and-search">
-          <input class="search-input" type="text" value="" placeholder="">
+          <input class="search-input" type="text" value="" placeholder="Symptom (e.g., sore throat, etc.)">
           <!-- <input class="city-input" type="text" value="" placeholder=""> -->
           <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-        </div>
+        </div><!--Input and search ends-->
       </form>
 
       <div class="result">
