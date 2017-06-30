@@ -1,1 +1,9 @@
-
+nav {
+  padding: 0 2%;
+  // Override Materialize nav stylings
+  box-shadow: none;
+  background-color: transparent;
+  .nav-wrapper {
+    background-color: transparent;
+  }
+}
