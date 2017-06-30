@@ -36,6 +36,11 @@ result.data.forEach(function(doctor) {
     // Zip code
     "<li><h4>Zip code:</h4><li>" +
     doctor.practices[0].visit_address.zip +
+    "</li>" +
+
+    // Phone
+    "<li><h4>Phone number:</h4><li>" +
+    doctor.practices[0].phones[0].number +
     "</li></ul><hr>");
   });
 
