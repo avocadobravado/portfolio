@@ -6,7 +6,7 @@
 
 ### Description
 
-Looking for a doctor? Type in a symptom or ailment (e.g., heart disease or sore throat) to find a list of doctors in the Portland, Oregon who can treat the issue, along with their address information. This site uses the BetterDoctor API to retrieve this information.
+Looking for a doctor? Type in a symptom or ailment (e.g., heart disease or sore throat) to find a list of doctors in the Portland, Oregon who can treat the issue, along with their addresses information. This site uses the BetterDoctor API to retrieve this information.
 
 ### Screenshot of website
 
