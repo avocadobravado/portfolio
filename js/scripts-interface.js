@@ -8,8 +8,7 @@ result.data.forEach(function(doctor) {
     doctor.practices[0].name +
 
     // Doctor specialty
-    "</li><li><h3>Specializes in:</h3><li>" +
-    doctor.specialties[0].actor +
+    "</li><li><h3>Expertise:</h3><li>" + doctor.specialties[0].description + 
 
     // Doctor biography
     "</li><h3>Biography:</h3><li>" +
