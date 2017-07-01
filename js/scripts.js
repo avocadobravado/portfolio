@@ -9,8 +9,7 @@ Doctor.prototype.getDoctor = function(medicalIssue, displayInfo) {
     displayInfo(result);
     // name(result.data[0].practices[0].name);
     // console.log(result);
-    // console.log("Ya did it!");
-    // console.log(result.data[0].practices[0].name);
+    // console.log(JSON.stringify(result));
   })
   .fail(function(error){
       console.log("Not working, but it's ok you'll get it <3");
