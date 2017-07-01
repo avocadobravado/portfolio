@@ -8,7 +8,7 @@ result.data.forEach(function(doctor) {
     doctor.practices[0].name +
 
     // Doctor specialty
-    "</li><li><h3>Expertise:</h3><li>" + doctor.specialties[0].description + 
+    "</li><li><h3>Expertise:</h3><li>" + doctor.specialties[0].description +
 
     // Doctor biography
     "</li><h3>Biography:</h3><li>" +
@@ -47,15 +47,13 @@ result.data.forEach(function(doctor) {
 
 $(function() {
   var newDoctor = new Doctor();
-  var searchInput;
 
   $('.search-form').submit(function(e) {
     e.preventDefault();
-    searchInput = $('.search-input').val();
+    var searchInput = $('.search-input').val();
 
     // Clear input for every submit
-    $(".result").empty();
-
+    $('.result').empty();
     newDoctor.getDoctor(searchInput, doctorInfo);
   });
 });
