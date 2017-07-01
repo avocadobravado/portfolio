@@ -86,7 +86,7 @@ Start the server:
 $ gulp serve
 ```
 
-Step 10 should immediately open up a web browser such as Google Chrome and take you to the site, but if not, visit the following address in your preferred browser:
+The previous step should mmediately open up a web browser such as Google Chrome and take you to the site, but if not, visit the following address in your preferred browser:
 
 ```
 localhost:3000
