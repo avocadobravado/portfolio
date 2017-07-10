@@ -1,47 +1,8 @@
 body {
-  font-family: 'Open Sans', serif;
-  letter-spacing: .0175em;
-  color: $black;
-}
-h3, h4 {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 22px;
-  margin-bottom: 5px;
-  color: $headline;
-  font-weight: 700;
-}
-h4 {
-  font-size: 18px;
-}
-p, li {
-  font-size: 17px;
-  line-height: 40px;
-}
-.content-wrapper {
-  form {
-    text-align: center;
-    color: #292929;
-  }
+  font-family: sans-serif;
 }
 
-label {
-  font-family: 'Open Sans';
-  font-size: 2em;
-}
-
-::selection {
-    color: whitesmoke;
-    background: darken($headline, 10%);
-}
-
-nav {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  font-size: 2em;
-  transition: all 0.5s ease-in-out;
-}
-
-input[type=text] {
-  font-family: 'Open Sans';
+a {
+  text-decoration: none;
+  color: white;
 }

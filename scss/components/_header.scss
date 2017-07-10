@@ -1,0 +1,38 @@
+.line {
+  height: 20px;
+  background: linear-gradient(90deg, cornflowerblue, mistyrose);
+}
+
+nav {
+  background: tomato;
+  height: 50px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  -webkit-transition: .13s all;
+  transition: .13s all;
+}
+
+nav,
+nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  height: 100%;
+  width: 95vw;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}

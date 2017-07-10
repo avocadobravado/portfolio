@@ -1,27 +1,21 @@
-.hero {
-  padding: 5%;
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  h1 {
-    margin-top: 100px;
-    margin-bottom: 60px;
-    font-family: 'Montserrat';
-    font-size: 4.3em;
-    color: $headline;
-    text-shadow: none;
-    text-align: center;
-    font-weight: 900;
+.welcome {
+  // background: linear-gradient(45deg, thistle, rebeccapurple);
+  background: lighten(tomato, 20%);
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: skew(0deg, -10deg);
+  transform: skew(0deg, -10deg);
+  padding: 20vh 0;
+  margin-top: -150px;
+  // border: 5px solid tomato;
+  .welcome-content {
+    padding-top: 160px;
+    margin: 0 auto;
+    width: 70%;
+    -webkit-transform: skew(0deg, 10deg);
+    transform: skew(0deg, 10deg);
   }
-  .hero-content {
-    height: 100vh;
-    position: absolute;
-    border-top: 10vw solid transparent;
-    border-bottom: 15vw solid transparent;
-    border-left: 100vw solid $accent;
-    top: -63vh;
-    z-index: -1;
+  h1 {
+    font-size: 3em;
   }
 }
