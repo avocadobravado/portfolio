@@ -1,16 +1,25 @@
 .line {
-  height: 20px;
-  background: linear-gradient(90deg, cornflowerblue, mistyrose);
+  height: 15px;
+  background: linear-gradient(90deg, gray, black);
 }
 
 nav {
-  background: tomato;
+  background: #999;
   height: 50px;
   position: relative;
   width: 100%;
   z-index: 1;
   -webkit-transition: .13s all;
   transition: .13s all;
+  .left {
+    font-size: 1.8em;
+    .bud {
+      color: red;
+    }
+    .green {
+      color: green;
+    }
+  }
 }
 
 nav,

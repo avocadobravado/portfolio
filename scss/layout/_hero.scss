@@ -1,13 +1,12 @@
 .welcome {
-  // background: linear-gradient(45deg, thistle, rebeccapurple);
-  background: lighten(tomato, 20%);
+  // background: linear-gradient(180deg, gray, black);
+  background: darken(whitesmoke, 3%);
   position: absolute;
   z-index: -1;
   -webkit-transform: skew(0deg, -10deg);
   transform: skew(0deg, -10deg);
   padding: 20vh 0;
   margin-top: -150px;
-  // border: 5px solid tomato;
   .welcome-content {
     padding-top: 160px;
     margin: 0 auto;
