@@ -1,3 +1,5 @@
+// Global typography
+
 body {
   font-family: sans-serif;
 }
@@ -5,4 +7,22 @@ body {
 a {
   text-decoration: none;
   color: whitesmoke;
+}
+
+// Nav
+
+nav a, nav li
+  {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: #333;
+    transform: translateY(-.1em);
+    opacity: 0.6;
+  }
+  &:visited {
+    color: $white;
+  &:active {
+    color: #333;
+  }
+ }
 }
