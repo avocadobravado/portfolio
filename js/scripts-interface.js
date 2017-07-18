@@ -47,9 +47,9 @@ function Circle(x, y, xVelocity, yVelocity, radius) {
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
     c.fillStyle = "rgb("+
-      Math.floor(Math.random()*200)+","+
-      Math.floor(Math.random()*200)+","+
-      Math.floor(Math.random()*200)+")";
+      Math.floor(Math.random()*256)+","+
+      Math.floor(Math.random()*1)+","+
+      Math.floor(Math.random()*256)+")";
     c.lineStyle = "#fff";
     c.lineWidth = 0;
     c.stroke();

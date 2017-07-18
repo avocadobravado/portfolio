@@ -1,6 +1,6 @@
 .welcome {
   // background: linear-gradient(180deg, gray, black);
-  background: darken(whitesmoke, 3%);
+  background: darken(white, 5%);
   width: 100vw;
   position: absolute;
   z-index: -1;
@@ -25,6 +25,7 @@ canvas {
   top: 0;
   left: 0;
   position: absolute;
+  opacity: 0.1;
 }
 
 .footer-icons {
