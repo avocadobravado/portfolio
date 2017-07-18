@@ -1,0 +1,13 @@
+// Contact link
+#contact {
+  background-color: $white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: #666;
+  &:hover {
+    opacity: 1 !important;
+    transform: none !important;
+    background-color: red;
+    // box-shadow: 1px 1px 1px 3px blue;
+  }
+}

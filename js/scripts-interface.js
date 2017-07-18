@@ -9,9 +9,7 @@ var c = canvas.getContext('2d');
 
 
 // Draw an x function
-
 canvas.addEventListener("mouseup", mouseUp, false);
-
 canvas.addEventListener("mouseup", mouseUp, false);
 
 function drawX(x, y) {
@@ -34,8 +32,6 @@ function mouseUp(e) {
 
 
 // Circle object
-
-
 function Circle(x, y, xVelocity, yVelocity, radius) {
   this.x = x;
   this.y = y;
@@ -45,13 +41,11 @@ function Circle(x, y, xVelocity, yVelocity, radius) {
 
   this.draw = function() {
     c.beginPath();
-    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+    c.arc(this.x, this.y, this.radius, 0, Math.PI * 3, false);
     c.fillStyle = "rgb("+
       Math.floor(Math.random()*256)+","+
       Math.floor(Math.random()*1)+","+
       Math.floor(Math.random()*256)+")";
-    c.lineStyle = "#fff";
-    c.lineWidth = 0;
     c.stroke();
     c.fill();
   }
@@ -75,18 +69,16 @@ function Circle(x, y, xVelocity, yVelocity, radius) {
 
 var circleArray = [];
 
-for (var i = 0; i < 100; i++) {
+for (var i = 0; i < 25; i++) {
 
-  var radius = 4;
-  var x = Math.random() * (innerWidth - radius * 4) + radius;
-  var y = Math.random() * (innerHeight - radius * 2) + radius;
-  var yVelocity = (Math.random() - 0.1) * 3;
-  var xVelocity = (Math.random() - 0.2) * 2;
+  var radius = 5;
+  var x = Math.random() * (innerWidth - radius * 1) + radius;
+  var y = Math.random() * (innerHeight - radius * 1) + radius;
+  var yVelocity = (Math.random() - 0.1) * 2;
+  var xVelocity = (Math.random() - 0.1) * 2;
 
   circleArray.push(new Circle(x, y, yVelocity, xVelocity, radius));
 }
-
-// var y = 200;
 
 function animate () {
   requestAnimationFrame(animate);

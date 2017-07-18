@@ -1,16 +1,26 @@
-.line {
-  height: 15px;
-  background: linear-gradient(90deg, gray, black);
-}
+// .line {
+//   height: 15px;
+//   background: #114357;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// }
 
 nav {
-  background: #999;
-  height: 50px;
+  // background: #b993d6; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #b993d6, #8ca6db); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #b993d6, #8ca6db); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // UNCOMMENT FOR BUTTON TESTING
+  // margin-top: 100px;
+  background: #FEAC5E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 60px;
   position: relative;
   width: 100%;
   z-index: 1;
   -webkit-transition: .13s all;
   transition: .13s all;
+  box-shadow: 1px 1px 1px 1px #ddd;
   .left {
     font-size: 1.8em;
     .bud {
