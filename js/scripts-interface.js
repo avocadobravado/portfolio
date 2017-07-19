@@ -15,12 +15,12 @@ canvas.addEventListener("mouseup", mouseUp, false);
 function drawX(x, y) {
     c.beginPath();
 
-    c.moveTo(x - 20, y - 20);
-    c.lineTo(x + 20, y + 20);
+    c.moveTo(x - 1, y - 1);
+    c.lineTo(x + 1, y + 1);
     c.stroke();
 
-    c.moveTo(x + 20, y - 20);
-    c.lineTo(x - 20, y + 20);
+    c.moveTo(x + 1, y - 1);
+    c.lineTo(x - 1, y + 1);
     c.stroke();
 }
 
@@ -69,7 +69,7 @@ function Circle(x, y, xVelocity, yVelocity, radius) {
 
 var circleArray = [];
 
-for (var i = 0; i < 25; i++) {
+for (var i = 0; i < 40; i++) {
 
   var radius = 5;
   var x = Math.random() * (innerWidth - radius * 1) + radius;

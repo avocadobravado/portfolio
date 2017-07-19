@@ -2,6 +2,6 @@
 
 //Mixin for slightly moving up text on the Y axis
 @mixin nudge() {
-  transform: translateY(-.1em);
-  opacity: 0.6;
+  transform: translateY(-.09em);
+  opacity: 0.8;
 }

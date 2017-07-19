@@ -5,9 +5,23 @@
   border-radius: 20px;
   color: #666;
   &:hover {
-    opacity: 1 !important;
-    transform: none !important;
-    background-color: red;
-    // box-shadow: 1px 1px 1px 3px blue;
+    // opacity: 1 !important;
+    // transform: translateY(10em) !important;
+    // transform: scale(2);
+    // background-color: white;
+    // box-shadow: 0 15px 10px -1px darken(red, 10%);
+    // animation: throb 1s infinite alternate ease-in-out;
   }
 }
+
+// NOT WORKING
+// @keyframes throb {
+//   0% {
+//     /*transform: scale(1.01);*/
+//     transform: scale(1.5);
+//   }
+//   100% {
+//     transform: scale(5);
+//     background: red;
+//   }
+// }

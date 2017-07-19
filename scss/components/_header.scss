@@ -6,14 +6,17 @@
 // }
 
 nav {
-  // background: #b993d6; /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to right, #b993d6, #8ca6db); /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to right, #b993d6, #8ca6db); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   // UNCOMMENT FOR BUTTON TESTING
   // margin-top: 100px;
   background: #FEAC5E;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  // background: #5f2c82;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   height: 60px;
   position: relative;
   width: 100%;
@@ -24,10 +27,10 @@ nav {
   .left {
     font-size: 1.8em;
     .bud {
-      color: red;
+      color: lighten(red, 20%);
     }
     .green {
-      color: green;
+      color: lighten(green, 5%);
     }
   }
 }
@@ -50,7 +53,10 @@ nav ul {
 nav ul li {
   list-style: none;
   margin-right: 20px;
+  &:hover {
+  }
 }
+
 
 nav li:first-child {
   margin-right: auto;
