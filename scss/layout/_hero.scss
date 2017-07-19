@@ -52,7 +52,6 @@ canvas {
         // transition: all 1s ease-in-out;
         &:hover {
           animation: spinmerightround 750ms 1 forwards ease-in-out;
-          // transform: rotate(720deg);
           opacity: 0.8;
           // @include nudge;
         }
@@ -67,6 +66,6 @@ canvas {
   }
   100% {
     color: rebeccapurple;
-    transform: rotate(720deg);
+    transform: rotate(1440deg);
   }
 }
