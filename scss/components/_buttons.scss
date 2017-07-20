@@ -3,25 +3,10 @@
   background-color: $white;
   padding: 10px 15px;
   border-radius: 20px;
-  color: #666;
+  color: $black;
+  transition: 0.3s all ease-in-out;
   &:hover {
-    // opacity: 1 !important;
-    // transform: translateY(10em) !important;
-    // transform: scale(2);
-    // background-color: white;
-    // box-shadow: 0 15px 10px -1px darken(red, 10%);
-    // animation: throb 1s infinite alternate ease-in-out;
+    box-shadow: 0 5px 20px -1px darken(orange, 10%);
+    background-color: lighten(orange, 45%);
   }
 }
-
-// NOT WORKING
-// @keyframes throb {
-//   0% {
-//     /*transform: scale(1.01);*/
-//     transform: scale(1.5);
-//   }
-//   100% {
-//     transform: scale(5);
-//     background: red;
-//   }
-// }

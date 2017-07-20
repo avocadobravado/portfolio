@@ -7,7 +7,7 @@
   z-index: -1;
   -webkit-transform: skew(0deg, -7deg);
   transform: skew(0deg, -7deg);
-  padding: 30vh 0;
+  padding: 26vh 0;
   margin-top: -150px;
   .welcome-content {
     padding-top: 130px;
@@ -50,7 +50,7 @@ canvas {
       a, li {
         color: #666;
         &:hover {
-          animation: spinmerightround 750ms 1 forwards ease-in-out;
+          animation: spinmerightround 500ms 1 forwards ease-in-out;
           opacity: 0.8;
         }
       }
@@ -64,6 +64,6 @@ canvas {
   }
   100% {
     color: rebeccapurple;
-    transform: rotate(1440deg);
+    transform: rotate(720deg);
   }
 }
