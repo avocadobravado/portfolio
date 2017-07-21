@@ -1,6 +1,4 @@
 .welcome {
-  // background: linear-gradient(180deg, gray, black);
-  // background: lighten(#C779D0, 30%);
   background: lighten(gray, 45%);
   width: 100vw;
   position: absolute;
@@ -27,22 +25,24 @@ canvas {
   top: 0;
   left: 0;
   position: absolute;
-  opacity: 0.1;
+  opacity: 0.075;
 }
 
-.footer-icons {
-  position: relative;
-  ul {
-    list-style-type: none;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    // flex-direction: column;
-    padding: 10px;
-    li {
-      padding-right: 20px;
-      font-size: 1.7em;
+  .footer-icons {
+    position: relative;
+    ul {
+      width: 200px;
+      list-style-type: none;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 10px;
+      padding: 10px;
+      li {
+        margin: 0;
+        font-size: 1.7em;
       }
       &:last-child {
         padding-right: 0;
