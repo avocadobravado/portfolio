@@ -4,3 +4,10 @@ $white: lighten(whitesmoke, 2%); // Whiteish
 $headline: #424a6d; // Dark blue
 $accent: lighten(#23bedd, 10%); // Lighter blue
 $black: #333; // Blackish
+
+
+// Breakpoints
+
+$xs-bp: "only screen and (max-width: 600px)";
+$small-bp: "only screen and (max-width: 800px)";
+$medium-bp: "only screen and (max-width: 958px)";

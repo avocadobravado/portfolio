@@ -17,6 +17,9 @@
   h1 {
     font-size: 3.5em;
     border: 1px solid red;
+    @include xs-breakpoint {
+      font-size: 2.5em;
+      }
   }
 }
 
@@ -38,8 +41,13 @@ canvas {
       right: 0;
       display: flex;
       justify-content: space-between;
-      margin-right: 10px;
+      margin-right: 2.5%;
       padding: 10px;
+      @include xs-breakpoint {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 5%;
+        }
       li {
         margin: 0;
         font-size: 1.7em;
@@ -50,7 +58,7 @@ canvas {
       a, li {
         color: #666;
         &:hover {
-          animation: spinmerightround 500ms 1 forwards ease-in-out;
+          animation: spinmerightround 550ms 1 forwards ease-in-out;
           opacity: 0.8;
         }
       }

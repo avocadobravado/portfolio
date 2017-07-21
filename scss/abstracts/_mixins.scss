@@ -5,3 +5,25 @@
   transform: translateY(-.09em);
   opacity: 0.8;
 }
+
+// Breakpoints
+
+//Breakpoints
+
+@mixin xs-breakpoint {
+  @media #{$xs-bp} {
+    @content;
+  }
+}
+
+@mixin small-breakpoint {
+  @media #{$small-bp} {
+    @content;
+  }
+}
+
+@mixin medium-breakpoint {
+  @media #{$medium-bp} {
+    @content;
+  }
+}
