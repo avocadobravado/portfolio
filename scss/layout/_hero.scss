@@ -31,10 +31,35 @@ canvas {
   opacity: 0.075;
 }
 
+.more-button {
+  // text-align: center;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  .fa {
+    font-size: 2em;
+    // color: $headline;
+    color: lighten(gray, 20%);
+    animation: hover 750ms infinite alternate ease-in-out;
+  }
+}
+
+@keyframes hover {
+  from {
+    // color: red;
+    transform: translateY(0.2em);
+  }
+  to {
+    color: translateY(-0.2em);
+  }
+}
+
   .footer-icons {
-    position: relative;
-    bottom: -90vh;
-    right: 0;
+    // position: relative;
+    // bottom: -90vh;
+    // right: 0;
+    display: flex;
     ul {
       width: 200px;
       list-style-type: none;
