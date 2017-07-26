@@ -33,10 +33,12 @@ canvas {
 
   .footer-icons {
     position: relative;
+    bottom: -90vh;
+    right: 0;
     ul {
       width: 200px;
       list-style-type: none;
-      position: fixed;
+      position: absolute;
       bottom: 0;
       right: 0;
       display: flex;
