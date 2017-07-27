@@ -1,0 +1,16 @@
+.about {
+  margin-top: 8vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: $white;
+  border-top: 5px solid blue;
+  border-bottom: 5px solid orange;
+  @include grid-column(12);
+  .about-left, .about-right {
+    @include grid-column(6);
+    border: 5px solid red;
+  }
+  p {
+    margin-top: 10vh;
+  }
+}
