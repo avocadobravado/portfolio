@@ -28,18 +28,28 @@ canvas {
   top: 0;
   left: 0;
   position: absolute;
-  opacity: 0.075;
+  // opacity: 0.095;
+  animation: fade 5s infinite alternate ease-in-out;
 }
 
+@keyframes fade {
+  from {
+    transform: scale(1);
+    opacity: .025;
+  }
+
+  to {
+    transform: scale(.9);
+    opacity: .080;
+  }
+}
 .more-button {
-  // text-align: center;
   height: 85vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   .fa {
     font-size: 2em;
-    // color: $headline;
     color: lighten(gray, 20%);
     animation: hover 750ms infinite alternate ease-in-out;
   }
@@ -47,7 +57,6 @@ canvas {
 
 @keyframes hover {
   from {
-    // color: red;
     transform: translateY(0.2em);
   }
   to {
