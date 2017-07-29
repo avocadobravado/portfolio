@@ -1,51 +1,63 @@
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8vh;
   height: 100vh;
-  width: 100vw;
-  background-color: $white;
-  border-top: 5px solid blue;
-  border-bottom: 5px solid orange;
-  @include grid-column(12);
+  max-width: 960px;
+  margin: 20vh auto 0 auto;
+  background-color: none;
+  border: 5px solid gray;
   .about-left {
     @include grid-column(4);
-    border: 5px solid red;
-    height: 600px;
+    // max-width: 400px;
+    height: 100vh;
+    // margin-top: 20vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid red;
+    @include xs-breakpoint {
+      height: 50vh;
+      @include grid-column(12);
+    }
   }
   .about-right {
     @include grid-column(8);
-    border: 5px solid orange;
-    height: 600px;
-    max-height: 800px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 20vh;
+    height: 100vh;
+    border: 5px solid orange;
+    @include xs-breakpoint {
+      @include grid-column(12);
+      margin-top: 0;
+      background-color: thistle;
+    }
     .col-wrapper {
       @include grid-column(12);
-      // border: 5px solid mistyrose;
-      display: flex;
-      height: 300px;
-      align-items: flex-end;
-      // align-items: flex-start;
-      align-self: flex-end;
+      margin: 0 auto;
       width: 100%;
+      background-color: thistle;
+      display: flex;
+      justify-content: space-between;
+      @include medium-breakpoint {
+        display: block;
+        background-color: tomato;
+        // border: 5px solid orange;
+      }
       .col {
         @include grid-column(4);
-        border: 5px solid green;
-        margin: 0 10px;
-        // height: 200px;
-      }
-      .remove {
-        padding-left: 0;
-        margin-right: 0;
-        background-color: tomato;
+        background-color: mistyrose;
+        margin: 0 auto;
+        @include medium-breakpoint {
+          @include grid-column(12);
+          flex-direction: column;
+          flex-wrap: wrap;
+          display: block;
+          background-color: red;
+          border: 5px solid orange;
+        }
       }
     }
-  }
-  p {
-    margin-top: 10vh;
   }
 }
