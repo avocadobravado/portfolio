@@ -1,33 +1,8 @@
-.about {
-  height: 100vh;
-  max-width: 960px;
-  margin: 20vh auto 0 auto;
-  background-color: none;
-  border: 5px solid gray;
-  .about-left {
-    @include grid-column(3);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid red;
-    // About-Left media queries
-    @include xs-breakpoint {
-      height: 50vh;
-      @include grid-column(12);
-      margin-bottom: 50vh;
-    }
-    .photo {
-      height: 200px;
-      width: 200px;
-      background-color: cornflowerblue;
-      border-radius: 50%;
-    }
-  }
   .about-right {
-    @include grid-column(9);
+    border: 5px solid blue;
+    margin: 20vh auto 0 auto;
+    max-width: 960px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
@@ -44,16 +19,37 @@
     h4 {
       font-size: 1.1em;
     }
+    .about-info {
+      border: 5px solid orange;
+      display: flex;
+      justify-content: space-between;
+      justify-content: center;
+
+      .about-info-right {
+        @include grid-column(3);
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          border-radius: 50%;
+          max-width: 100%;
+        }
+      }
+      .about-info-left {
+        @include grid-column(9);
+        background-color: thistle;
+      }
+
+    }
     .col-wrapper {
       @include grid-column(12);
       margin: 0 auto;
       width: 100%;
-      background-color: thistle;
       display: flex;
       justify-content: space-between;
       @include xs-breakpoint {
         display: block;
-        background-color: tomato;
       }
       .col {
         @include grid-column(4);
@@ -72,6 +68,7 @@
         }
         @include medium-breakpoint {
           @include grid-column(12);
+          margin-bottom: 100vh;
           flex-direction: column;
           flex-wrap: wrap;
           display: block;
@@ -81,4 +78,3 @@
       }
     }
   }
-}
