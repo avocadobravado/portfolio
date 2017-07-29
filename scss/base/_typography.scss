@@ -1,12 +1,20 @@
 // Global typography
 body {
-  font-family: sans-serif;
+  font-family: $primary;
   overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
   color: whitesmoke;
+}
+
+li {
+  font-family: $primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header;
 }
 
 // Nav

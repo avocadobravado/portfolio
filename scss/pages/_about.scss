@@ -11,15 +11,17 @@
     justify-content: center;
     align-items: center;
     border: 5px solid red;
+    // About-Left media queries
+    @include xs-breakpoint {
+      height: 50vh;
+      @include grid-column(12);
+      margin-bottom: 50vh;
+    }
     .photo {
       height: 200px;
       width: 200px;
       background-color: cornflowerblue;
       border-radius: 50%;
-    }
-    @include xs-breakpoint {
-      height: 50vh;
-      @include grid-column(12);
     }
   }
   .about-right {
@@ -29,17 +31,18 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    // About-Right media queries
+    @include xs-breakpoint {
+      @include grid-column(12);
+      margin-top: 0;
+      background-color: thistle;
+    }
     h2 {
       font-size: 2.2em;
       margin-bottom: 0;
     }
     h4 {
       font-size: 1.1em;
-    }
-    @include xs-breakpoint {
-      @include grid-column(12);
-      margin-top: 0;
-      background-color: thistle;
     }
     .col-wrapper {
       @include grid-column(12);
@@ -48,7 +51,7 @@
       background-color: thistle;
       display: flex;
       justify-content: space-between;
-      @include medium-breakpoint {
+      @include xs-breakpoint {
         display: block;
         background-color: tomato;
       }
