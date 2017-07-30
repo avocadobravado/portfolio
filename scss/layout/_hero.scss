@@ -8,6 +8,7 @@
   transform: skew(0deg, -7deg);
   padding: 26vh 0;
   margin-top: -150px;
+  overflow: hidden;
   .welcome-content {
     padding-top: 130px;
     margin: 0 auto;
@@ -30,18 +31,20 @@ canvas {
   left: 0;
   position: absolute;
   // opacity: 0.095;
-  animation: fade 5s infinite alternate ease-in-out;
+  animation: fade 50s infinite forwards ease-in-out;
+  // overflow: hidden;
 }
 
 @keyframes fade {
-  from {
-    transform: scale(1);
-    opacity: .025;
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: .1;
   }
 
-  to {
-    transform: scale(.9);
-    opacity: .080;
+  100% {
+    transform: scale(.85) rotate(360deg);
+    opacity: .05;
+    // background: black;
   }
 }
 .more-button {

@@ -46,7 +46,8 @@ function Circle(x, y, xVelocity, yVelocity, radius) {
     //   Math.floor(Math.random()*256)+","+
     //   Math.floor(Math.random()*1)+","+
     //   Math.floor(Math.random()*256)+")";
-    c.fillStyle = "#663399";
+    c.fillStyle = "rgb(0, 0, 255)";
+    // c.fillStyle = "#663399";
     c.stroke();
     c.fill();
   }
@@ -75,8 +76,8 @@ for (var i = 0; i < 30; i++) {
   var radius = 5;
   var x = Math.random() * (innerWidth - radius * 1) + radius;
   var y = Math.random() * (innerHeight - radius * 1) + radius;
-  var yVelocity = (Math.random() - 0.1) * 1;
-  var xVelocity = (Math.random() - 0.1) * 1;
+  var yVelocity = (Math.random() - 0.1) * .8;
+  var xVelocity = (Math.random() - 0.1) * .8;
 
   circleArray.push(new Circle(x, y, yVelocity, xVelocity, radius));
 }
