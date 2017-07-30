@@ -6,12 +6,6 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    // About-Right media queries
-    @include xs-breakpoint {
-      @include grid-column(12);
-      margin-top: 0;
-      background-color: thistle;
-    }
     h2 {
       font-size: 2.2em;
       margin-bottom: 0;
@@ -20,11 +14,17 @@
       font-size: 1.1em;
     }
     .about-info {
+      @include grid-column(12);
       border: 5px solid orange;
       display: flex;
       justify-content: space-between;
       justify-content: center;
-
+      max-height: 300px;
+      // @include medium-breakpoint {
+      //   display: flex;
+      //   flex-direction: column;
+        // height: 100vh;
+      // }
       .about-info-right {
         @include grid-column(3);
         background-color: red;
@@ -35,10 +35,23 @@
           border-radius: 50%;
           max-width: 100%;
         }
+        @include small-breakpoint {
+          @include grid-column(12);
+          margin: 0 auto;
+          background: mistyrose;
+          border: 5px solid green;
+          img {
+            height: 100%;
+          }
+        }
       }
       .about-info-left {
         @include grid-column(9);
         background-color: thistle;
+        @include small-breakpoint {
+          @include grid-column(12);
+          border: 5px solid yellow;
+        }
       }
 
     }
@@ -48,6 +61,8 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+      @include medium-breakpoint {
+      }
       @include xs-breakpoint {
         display: block;
       }
@@ -66,12 +81,13 @@
             padding: 0;
           }
         }
-        @include medium-breakpoint {
-          @include grid-column(12);
-          margin-bottom: 100vh;
-          flex-direction: column;
-          flex-wrap: wrap;
-          display: block;
+        @include small-breakpoint {
+          // @include grid-column(12);
+          // margin-bottom: 100vh;
+          // flex-direction: column;
+          // flex-wrap: wrap;
+          // display: block;
+          // margin-top: 30vh;
           background-color: red;
           border: 5px solid orange;
         }
