@@ -1,5 +1,4 @@
   .about-right {
-    // border: 5px solid gray;
     height: 100vh;
     max-width: 960px;
     margin: 20vh auto 0 auto;
@@ -16,7 +15,6 @@
     .about-info {
       @include grid-column(12);
       max-height: 300px;
-      // border: 5px solid pink;
       @include small-breakpoint {
         h2 {
           font-size: 1.2em;
@@ -27,14 +25,12 @@
       }
       .about-info-right {
         @include grid-column(3);
-        // border: 5px solid purple;
         img {
           border-radius: 50%;
           max-width: 100%;
         }
         @include xs-breakpoint {
           @include grid-column(12);
-          // background-color: thistle;
           display: flex;
           justify-content: center;
           img {
@@ -45,7 +41,6 @@
       }
       .about-info-left {
         @include grid-column(9);
-        // border: 5px solid green;
         @include xs-breakpoint {
           @include grid-column(12);
         }
@@ -53,23 +48,17 @@
 
     }
     .col-wrapper {
-      // @include grid-column(12);
-      width: 95%;
-      margin: 0 auto;
+      @include grid-column(12);
       display: flex;
-      // justify-content: space-between;
-      // border: 5px solid red;
+      justify-content: space-between;
       @include medium-breakpoint {
       }
       @include xs-breakpoint {
         margin: 10vh auto 0 auto;
         flex-direction: column;
-        // margin: 0 auto;
       }
       .col {
         @include grid-column(4);
-        margin: 0 auto;
-        // border: 5px solid black;
         strong {
           text-align: center;
           font-size: 1.1em;
@@ -83,13 +72,8 @@
             font-size: 0.9em;
           }
         }
-        @include small-breakpoint {
-          @include grid-column(4);
-          display: block;
-        }
         @include xs-breakpoint {
-          display: block;
-          width: 100%;
+          @include grid-column(12);
         }
       }
     }
