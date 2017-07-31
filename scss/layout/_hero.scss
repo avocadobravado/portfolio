@@ -26,23 +26,20 @@
 
 canvas {
   transform: skew(0deg, 0deg);
-  // width: 100%;
   top: 0;
   left: 0;
   position: absolute;
-  // opacity: 0.095;
-  animation: fade 50s infinite forwards ease-in-out;
-  // overflow: hidden;
+  animation: fade 60s infinite forwards ease-in-out;
 }
 
 @keyframes fade {
   0% {
-    transform: scale(1) rotate(0deg);
-    opacity: .1;
+    transform: rotate(0deg);
+    opacity: .2;
   }
 
   100% {
-    transform: scale(.85) rotate(360deg);
+    transform: rotate(360deg);
     opacity: .05;
     // background: black;
   }

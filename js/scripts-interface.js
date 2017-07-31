@@ -41,14 +41,15 @@ function Circle(x, y, xVelocity, yVelocity, radius) {
 
   this.draw = function() {
     c.beginPath();
-    c.arc(this.x, this.y, this.radius, 0, Math.PI * 3, false);
+    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
     // c.fillStyle = "rgb("+
-    //   Math.floor(Math.random()*256)+","+
-    //   Math.floor(Math.random()*1)+","+
-    //   Math.floor(Math.random()*256)+")";
-    c.fillStyle = "rgb(0, 0, 255)";
+    //   Math.floor(Math.random()*255)+","+
+    //   Math.floor(Math.random()*255)+","+
+    //   Math.floor(Math.random()*255)+")";
+    // c.fillStyle = "rgb(0, 0, 255)";
+    c.fillStyle = "#663399";
     // c.fillStyle = "#663399";
-    c.stroke();
+    // c.stroke();
     c.fill();
   }
 
@@ -73,11 +74,11 @@ var circleArray = [];
 
 for (var i = 0; i < 30; i++) {
 
-  var radius = 5;
+  var radius = 4;
   var x = Math.random() * (innerWidth - radius * 1) + radius;
   var y = Math.random() * (innerHeight - radius * 1) + radius;
-  var yVelocity = (Math.random() - 0.1) * .8;
-  var xVelocity = (Math.random() - 0.1) * .8;
+  var yVelocity = (Math.random() - .8) * 1;
+  var xVelocity = (Math.random() - .8) * 1;
 
   circleArray.push(new Circle(x, y, yVelocity, xVelocity, radius));
 }
