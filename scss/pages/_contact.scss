@@ -1,0 +1,14 @@
+#contact-section {
+  // background: lighten(gray, 46%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contact-wrapper {
+    @include grid-column(12);
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: thistle;
+  }
+}

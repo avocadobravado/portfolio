@@ -74,11 +74,12 @@ var circleArray = [];
 
 for (var i = 0; i < 30; i++) {
 
+  // var radius = Math.floor(Math.random() * 5) + 1;
   var radius = 4;
   var x = Math.random() * (innerWidth - radius * 1) + radius;
   var y = Math.random() * (innerHeight - radius * 1) + radius;
-  var yVelocity = (Math.random() - .8) * 1;
-  var xVelocity = (Math.random() - .8) * 1;
+  var yVelocity = (Math.random() - .8) * .3;
+  var xVelocity = (Math.random() - .8) * .3;
 
   circleArray.push(new Circle(x, y, yVelocity, xVelocity, radius));
 }
