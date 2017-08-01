@@ -32,6 +32,45 @@ canvas {
   animation: fade 60s infinite forwards ease-in-out;
 }
 
+.secondary-hero {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // animation: secondary-hero 750ms infinite alternate ease-in-out;
+  div {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: mistyrose;
+    animation: secondary-hero 50s infinite alternate ease-in-out;
+  }
+}
+
+@keyframes secondary-hero {
+  0% {
+    transform: scale(1) translateX(10vw);
+  }
+  25% {
+    transform: scale(1) translateY(20vw);
+  }
+  50% {
+    transform: scale(1.2) translateX(30vw);
+    opacity: 0.1;
+  }
+  75% {
+    transform: scale(1) translateY(50vw);
+  }
+  100% {
+    transform: scale(1) translateX(10vw);
+    opacity: 1;
+  }
+}
+
 @keyframes fade {
   0% {
     transform: rotate(0deg);
@@ -40,7 +79,7 @@ canvas {
 
   100% {
     transform: rotate(360deg);
-    opacity: .05;
+    opacity: .1;
     // background: black;
   }
 }

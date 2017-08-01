@@ -10,6 +10,10 @@ $black: #333; // Blackish
 $header: 'Merriweather', serif;
 $primary: 'Open Sans', sans-serif;
 
+// Cohesive styling
+
+$transition: 0.3s all ease-in-out;
+
 // Breakpoints
 
 $xs-bp: "only screen and (max-width: 600px)";
