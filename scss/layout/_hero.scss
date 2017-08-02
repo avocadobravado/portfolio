@@ -31,14 +31,13 @@ canvas {
   position: absolute;
   animation: fade 60s infinite forwards ease-in-out;
 }
-
 .secondary-hero {
   width: 100vw;
   height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-  // animation: secondary-hero 750ms infinite alternate ease-in-out;
+  // animation: fade 60s infinite forwards ease-in-out;
   div {
     position: absolute;
     top: 30%;
@@ -47,7 +46,32 @@ canvas {
     height: 10px;
     border-radius: 50%;
     background-color: mistyrose;
-    animation: secondary-hero 50s infinite alternate ease-in-out;
+    animation: secondary-hero 45s infinite forwards ease-in-out;
+  }
+  div:nth-child(2) {
+    @extend div;
+    top: 50%;
+    left: 70%;
+  }
+  div:nth-child(3) {
+    @extend div;
+    top: 20%;
+    left: 80%;
+  }
+  div:nth-child(4) {
+    @extend div;
+    top: 40%;
+    left: 10%;
+  }
+  div:nth-child(5) {
+    @extend div;
+    top: 20%;
+    left: 40%;
+  }
+  div:nth-child(6) {
+    @extend div;
+    top: 50%;
+    left: 80%;
   }
 }
 
@@ -56,18 +80,16 @@ canvas {
     transform: scale(1) translateX(10vw);
   }
   25% {
-    transform: scale(1) translateY(20vw);
+    transform: translateY(20vw);
   }
   50% {
-    transform: scale(1.2) translateX(30vw);
-    opacity: 0.1;
+    transform: translateX(30vw) scale(.9);
   }
   75% {
-    transform: scale(1) translateY(50vw);
+    transform: translateY(50vw);
   }
   100% {
-    transform: scale(1) translateX(10vw);
-    opacity: 1;
+    transform: translateX(10vw) scale(1);
   }
 }
 
