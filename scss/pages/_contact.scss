@@ -1,9 +1,12 @@
 #contact-section {
-  // background: lighten(gray, 46%);
+  background: #FEAC5E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: $white;
 
   .contact-wrapper {
     @include grid-column(12);
@@ -11,33 +14,89 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5%;
+    padding: 5% 0;
     height: 70vh;
     max-width: 960px;
-    width: 100%;
+    // border: 5px solid red;
+    // width: 100%;
     margin: 0 auto;
-    background-color: thistle;
+    .bottom-icons {
+      width: 200px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+        li {
+          margin: 0;
+          padding: 0;
+          font-size: 25px;
+          transition: $transition;
+          &:hover {
+            opacity: 0.7;
+            transform: translateY(-.1em);
+          }
+        }
+      }
+    }
     h2 {
       font-size: 2em;
     }
     p {
       text-align: center;
       font-size: 1.2em;
-      width: 70vh;
+      width: 70%;
+      max-width: 800px;
+      margin: 0;
+      // border: 1px solid red;
     }
     form {
-      display: flex;
-      flex-direction: column;
+      // display: flex;
+      // flex-direction: column;
+      // height: 400px;
+      // max-width: 500px;
+      margin: 0 auto;
+      width: 60%;
+      height: 500px;
+      // border: 5px solid red;
       input, textarea {
+        padding: 7px 5px;
+        width: 100%;
+        display: block;
         margin-bottom: 15px;
-        border: none;
-        border-radius: 5px;
+        border: 2px solid transparent;
+        border-radius: $radius;
+        outline: none;
+        transition: $transition;
+        &:focus {
+          border: 2px solid rebeccapurple;
+          opacity: 0.8;
+        }
       }
-      input, textarea {}
+      input {
+        height: 25px;
+      }
+      textarea {
+        height: 100px;
+      }
     }
     button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border: none;
-      border-radius: 5px;
+      text-align: center;
+      border-radius: 25px;
+      background-color: $white;
+      padding: 15px 30px;
+      width: 175px;
+      margin: 0 auto;
+      cursor: pointer;
+      outline: none;
+      transition: $transition;
+      &:hover {
+        background-color: rgba(255, 255, 255, .5);
+      }
     }
   }
 }
