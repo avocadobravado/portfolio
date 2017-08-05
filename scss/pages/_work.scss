@@ -21,7 +21,7 @@
     }
     .work-project {
       @include grid-column(4);
-      height: 40vh;
+      height: 35vh;
       max-height: 400px;
       @include xs-breakpoint {
         // margin: 10vh 0;
