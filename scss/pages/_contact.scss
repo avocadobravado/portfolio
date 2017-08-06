@@ -29,10 +29,14 @@
           margin: 0;
           padding: 0;
           font-size: 25px;
-          transition: $transition;
-          &:hover {
-            opacity: 0.7;
-            transform: translateY(-.1em);
+          a {
+            color: $white;
+            transition: $transition;
+            opacity: .75;
+            &:hover {
+              opacity: 1;
+              transform: translateY(-.1em);
+            }
           }
         }
       }
@@ -69,8 +73,17 @@
       input {
         height: 25px;
       }
+      input[type=text]{
+        font-family: $primary;
+        font-size: 0.85em;
+        letter-spacing: $letter-spacing;
+      }
       textarea {
         height: 100px;
+        font-family: $primary;
+        font-size: .85em;
+        letter-spacing: $letter-spacing;
+        padding: 5px;
       }
     }
     button {
@@ -84,7 +97,6 @@
       background-color: $white;
       color: rebeccapurple;
       font-weight: bold;
-      // background-color: rebeccapurple;
       padding: 15px 30px;
       width: 175px;
       margin: 0 auto;
