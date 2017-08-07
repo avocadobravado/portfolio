@@ -1,4 +1,4 @@
-#contact-section {
+#contact-me {
   background: #FEAC5E;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -29,14 +29,13 @@
           margin: 0;
           padding: 0;
           font-size: 25px;
+          transition: $transition;
           a {
-            color: $white;
-            transition: $transition;
-            opacity: .75;
-            &:hover {
-              opacity: 1;
-              transform: translateY(-.1em);
-            }
+            color: rebeccapurple;
+          }
+          &:hover {
+            opacity: 0.7;
+            transform: translateY(-.1em);
           }
         }
       }
@@ -56,6 +55,9 @@
       margin: 0 auto;
       width: 60%;
       height: 500px;
+      @include small-breakpoint {
+        width: 80%;
+      }
       input, textarea {
         padding: 7px 5px;
         width: 100%;
@@ -81,30 +83,6 @@
       textarea {
         height: 100px;
         font-family: $primary;
-        font-size: .85em;
-        letter-spacing: $letter-spacing;
-        padding: 5px;
-      }
-    }
-    button {
-      font-family: $primary;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: none;
-      text-align: center;
-      border-radius: 25px;
-      background-color: $white;
-      color: rebeccapurple;
-      font-weight: bold;
-      padding: 15px 30px;
-      width: 175px;
-      margin: 0 auto;
-      cursor: pointer;
-      outline: none;
-      transition: $transition;
-      &:hover {
-        background-color: rgba(255, 255, 255, .5);
       }
     }
   }

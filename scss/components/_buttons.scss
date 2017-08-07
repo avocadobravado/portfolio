@@ -1,5 +1,5 @@
-// Contact link
-#contact {
+// Contact link in header
+.contact-button {
   background-color: $white;
   padding: 10px 15px;
   border-radius: 20px;
@@ -8,5 +8,32 @@
   &:hover {
     box-shadow: 0 5px 10px -1px darken(orange, 10%);
     background-color: lighten(orange, 45%);
+  }
+}
+
+// Contact form button
+.form-button {
+  @extend .contact-button;
+  font-family: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  text-align: center;
+  border-radius: 25px;
+  background-color: $white;
+  color: rebeccapurple;
+  font-weight: bold;
+  padding: 15px 30px;
+  width: 175px;
+  margin: 0 auto;
+  cursor: pointer;
+  outline: none;
+  transition: $transition;
+  opacity: 0.8;
+  &:hover {
+    background-color: rgba(255, 255, 255, .95);
+    box-shadow: 0 2px 10px -1px rebeccapurple;
+    opacity: 1;
   }
 }

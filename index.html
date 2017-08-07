@@ -20,12 +20,12 @@
   </div>
   <body>
     <!-- NAVIGATION -->
-    <nav>
+    <nav id="mainNav">
       <ul>
         <li class="left"><a href="index.html"><span class="bud">@</span><span class="green">>-|---</span></a></li>
-        <li class="nav-style"><a href="about.html">About</a></li>
-        <li class="nav-style"><a href="work.html">Work</a></li>
-        <li><a href="contact.html" id="contact" class="paper-raise">Contact</a></li>
+        <li class="nav-style scroll"><a href="#about" c lass="about-link">About</a></li>
+        <li class="nav-style scroll"><a href="#work">Work</a></li>
+        <li><a href="#contact-me" class="contact-button paper-raise scroll">Contact</a></li>
       </ul>
     </nav>
     <!-- NAVIGATION ENDS -->
@@ -51,7 +51,7 @@
     <!-- WELCOME ENDS-->
 
     <div class="more-button">
-      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      <!-- <i class="fa fa-chevron-down" aria-hidden="true"></i> -->
     </div>
 
     <div class="footer-wrapper">
@@ -67,7 +67,7 @@
       <!--FOOTER ICONS-->
     </div><!--FOOTER WRAPPER-->
 
-    <div class="about-right">
+    <div id="about">
       <div class="about-info">
         <div class="about-info-left">
           <h2>I really like making websites.</h2>
@@ -127,39 +127,52 @@
           <div class="work-container">
             <div class="work-grid">
               <div class="project">
-                <img src="img/icon-thehub.png">
+                <a href="https://github.com/avocadobravado/the-hub">
+                <img src="img/icon-thehub.png"></a>
                 <div class="middle">
-                  <div class="text"><p>View Project &rarr;</p></div>
+                  <div class="text">
+                    <a href="https://github.com/avocadobravado/the-hub" class="project-text">View Project &rarr;</a>
+                  </div>
                 </div>
               </div>
               <div class="project">
-                <img src="img/icon-penelopie.png" class="responsive-image">
+                <a href="https://github.com/avocadobravado/penelopie"><img src="img/icon-penelopie.png" class="responsive-image"></a>
                 <div class="middle">
-                  <div class="text"><p>View Project &rarr;</p></div>
+                  <div class="text">
+                    <a href="https://github.com/avocadobravado/penelopie" class="project-text">View Project &rarr;</a>
+                  </div>
                 </div>
               </div>
               <div class="project">
-                <img src="img/icon-packpartout.png" class="responsive-image">
+                <a href="https://github.com/avocadobravado/penelopie"><img src="img/icon-packpartout.png" class="responsive-image"></a>
                 <div class="middle">
-                  <div class="text"><p>View Project &rarr;</p></div>
+                  <div class="text">
+                    <a href="https://github.com/avocadobravado/penelopie" class="project-text">View Project &rarr;</a>
+                  </div>
                 </div>
               </div>
               <div class="project">
-                <img src="img/icon-socialcodus.png" class="responsive-image">
+                <a href="https://github.com/avocadobravado/social-media-project"><img src="img/icon-socialcodus.png" class="responsive-image"></a>
                 <div class="middle">
-                  <div class="text"><p>View Project &rarr;</p></div>
+                  <div class="text">
+                    <a href="https://github.com/avocadobravado/social-media-project" class="project-text">View Project &rarr;</a>
+                  </div>
                 </div>
               </div>
               <div class="project">
-                <img src="img/icon-zoo.png" class="responsive-image">
+                <a href="https://github.com/avocadobravado/javascript-week2"><img src="img/icon-zoo.png" class="responsive-image"></a>
                 <div class="middle">
-                  <div class="text"><p>View Project &rarr;</p></div>
+                  <div class="text">
+                    <a href="https://github.com/avocadobravado/javascript-week2" class="project-text">View Project &rarr;</a>
+                  </div>
                 </div>
               </div>
               <div class="project">
-                <img src="img/icon-doctor.png" class="responsive-image">
+                <a href="https://github.com/avocadobravado/javascript-week1"><img src="img/icon-doctor.png" class="responsive-image"></a>
                 <div class="middle">
-                  <div class="text"><p>View Project &rarr;</p></div>
+                  <div class="text">
+                    <a href="https://github.com/avocadobravado/javascript-week1" class="project-text">View Project &rarr;</a>
+                  </div>
                 </div>
               </div>
               <!-- <button type="button" name="button">More work on GitHub</button> -->
@@ -168,7 +181,7 @@
         </div>
       </div>
 
-      <div id="contact-section">
+      <div id="contact-me">
         <div class="contact-wrapper">
           <h2>Let's build something great.</h2>
           <p>I am currently looking for web and UI design opportunities in Portland, Seattle, or remotely. Feel free to get in touch!</p>
@@ -186,7 +199,7 @@
             <input type="text" name="" value="" placeholder="Your name">
             <input type="text" name="" value="" placeholder="Subject">
             <textarea></textarea>
-            <button type="button" name="button">Send</button>
+            <button type="button" name="button" class="form-button">Send</button>
           </form>
         </div>
       </div>

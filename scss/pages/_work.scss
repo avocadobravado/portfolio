@@ -10,7 +10,7 @@
     margin-bottom: 20vh;
   }
   @include xs-breakpoint {
-    margin-top: 200vh;
+    margin-top: 190vh;
     margin-bottom: 100vh;
   }
   .work-wrapper {
@@ -75,9 +75,9 @@
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 550px) {
   .work-grid {
-    width: 90%;
+    width: 100%;
     .project {
       width: calc(100% / 2);
       margin: 0 auto;
@@ -109,10 +109,10 @@
   cursor: pointer;
 }
 
-.text {
+.project-text {
   background-color: rebeccapurple;
   color: white;
   font-size: 15px;
-  padding: 1px 15px;
+  padding: 12px 20px;
   border-radius:  3px;
 }

@@ -37,7 +37,6 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  // animation: fade 60s infinite forwards ease-in-out;
   div {
     position: absolute;
     top: 30%;
@@ -102,7 +101,6 @@ canvas {
   100% {
     transform: rotate(360deg);
     opacity: .1;
-    // background: black;
   }
 }
 .more-button {
