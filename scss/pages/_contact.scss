@@ -2,10 +2,10 @@
   background: #FEAC5E;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 100vh;
+  height: 100%;
+  padding: 100px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
   color: $white;
 
   .contact-wrapper {
@@ -14,10 +14,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5% 0;
-    height: 70vh;
     max-width: 960px;
-    margin: 0 auto;
     .bottom-icons {
       width: 200px;
       ul {
@@ -54,7 +51,6 @@
     form {
       margin: 0 auto;
       width: 60%;
-      height: 500px;
       @include small-breakpoint {
         width: 80%;
       }
@@ -75,15 +71,35 @@
       input {
         height: 25px;
       }
-      input[type=text]{
+      input[type=text], input[type=email] {
         font-family: $primary;
-        font-size: 0.85em;
+        font-size: 0.8em;
         letter-spacing: $letter-spacing;
       }
       textarea {
         height: 100px;
+        color: $black;
         font-family: $primary;
+        font-size: 0.8em;
+        letter-spacing: $letter-spacing;
       }
     }
   }
+}
+
+// Textarea placeholder color
+textarea::-webkit-input-placeholder {
+color: $black;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+color: $black;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: $black;
+}
+
+textarea:-ms-input-placeholder {
+color: $black;
 }

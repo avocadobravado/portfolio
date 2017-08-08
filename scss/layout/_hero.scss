@@ -1,7 +1,7 @@
 .welcome {
   background: lighten(gray, 46%);
   width: 100vw;
-  height: 50vh;
+  height: 50%;
   position: absolute;
   z-index: -1;
   -webkit-transform: skew(0deg, -7deg);
@@ -33,7 +33,6 @@ canvas {
 }
 .secondary-hero {
   width: 100vw;
-  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;

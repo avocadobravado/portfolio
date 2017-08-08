@@ -13,8 +13,10 @@ Design:
 
 Develop:
 * Media queries for navigation
-* Smooth scrolling buttons for navigation
 * Back to top button?
+* Project details page
+
+Done section: 🖖
+* Smooth scrolling buttons for navigation
 * Working email form
 * Hover effects for project thumbnails
-* Project details page
