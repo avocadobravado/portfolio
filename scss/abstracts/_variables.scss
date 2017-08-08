@@ -1,24 +1,25 @@
 // Colors
-
-$white: lighten(whitesmoke, 2%); // Whiteish
-$headline: #424a6d; // Dark blue
-$accent: lighten(#23bedd, 10%); // Lighter blue
+$white: #fafafa; // Whiteish
 $black: #333; // Blackish
-
+$headline: #424a6d; // Dark blue
+$accent: $accent;
+$orange: #FEAC5E;
+$blue: #4BC0C8;
+$purple: #C779D0;
+///////////////
 
 // Fonts
 $header: 'Merriweather', serif;
 $primary: 'Muli', sans-serif;
-// $primary: 'Open Sans', sans-serif;
+///////////////
 
 // Cohesive styling
-
 $transition: 0.3s all ease-in-out;
 $radius: 10px;
 $letter-spacing: .0075em;
+///////////////
 
 // Breakpoints
-
 $xs-bp: "only screen and (max-width: 550px)";
 $small-bp: "only screen and (max-width: 800px)";
 $medium-bp: "only screen and (max-width: 958px)";

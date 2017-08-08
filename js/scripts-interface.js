@@ -30,7 +30,6 @@ function mouseUp(e) {
     drawX(mouseX, mouseY);
 }
 
-
 // Circle object
 function Circle(x, y, xVelocity, yVelocity, radius) {
   this.x = x;
@@ -42,14 +41,7 @@ function Circle(x, y, xVelocity, yVelocity, radius) {
   this.draw = function() {
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-    // c.fillStyle = "rgb("+
-    //   Math.floor(Math.random()*255)+","+
-    //   Math.floor(Math.random()*255)+","+
-    //   Math.floor(Math.random()*255)+")";
-    // c.fillStyle = "rgb(0, 0, 255)";
     c.fillStyle = "#663399";
-    // c.fillStyle = "#663399";
-    // c.stroke();
     c.fill();
   }
 
@@ -72,9 +64,7 @@ function Circle(x, y, xVelocity, yVelocity, radius) {
 
 var circleArray = [];
 
-for (var i = 0; i < 30; i++) {
-
-  // var radius = Math.floor(Math.random() * 5) + 1;
+for (var i = 0; i < 40; i++) {
   var radius = 4;
   var x = Math.random() * (innerWidth - radius * 1) + radius;
   var y = Math.random() * (innerHeight - radius * 1) + radius;

@@ -1,5 +1,4 @@
 #work {
-  // background-color: mistyrose;
   height: 100%;
   padding: 100px 0;
   display: flex;
@@ -7,8 +6,11 @@
   justify-content: center;
   flex-direction: column;
   @include small-breakpoint {
+    margin: 0 auto;
+    padding: 0;
   }
   @include xs-breakpoint {
+
   }
   .work-wrapper {
     max-width: 960px;
@@ -38,7 +40,6 @@
           opacity: 0.9;
         }
         img {
-          // width: 100%;
           display: block;
           margin: 3px;
           transition: $transition;
@@ -106,7 +107,7 @@
 }
 
   .project-text {
-  background-color: rebeccapurple;
+  background-color: $accent;
   color: white;
   font-size: 15px;
   padding: 10px 20px;
