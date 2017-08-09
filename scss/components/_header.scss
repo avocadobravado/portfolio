@@ -12,6 +12,11 @@ nav {
   -webkit-transition: .13s all;
   transition: .13s all;
   box-shadow: 1px 1px 1px 1px #ddd;
+  @include xs-breakpoint {
+    .left {
+      display: none;
+    }
+  }
   .left {
     font-size: 1.8em;
     .bud {
