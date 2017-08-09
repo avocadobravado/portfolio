@@ -74,35 +74,6 @@ canvas {
   }
 }
 
-@keyframes secondary-hero {
-  0% {
-    transform: scale(1) translateX(10vw);
-  }
-  25% {
-    transform: translateY(20vw);
-  }
-  50% {
-    transform: translateX(30vw) scale(.9);
-  }
-  75% {
-    transform: translateY(50vw);
-  }
-  100% {
-    transform: translateX(10vw) scale(1);
-  }
-}
-
-@keyframes fade {
-  0% {
-    transform: rotate(0deg);
-    opacity: .2;
-  }
-
-  100% {
-    transform: rotate(360deg);
-    opacity: .1;
-  }
-}
 .more-button {
   height: 85vh;
   display: flex;
@@ -112,15 +83,6 @@ canvas {
     font-size: 2em;
     color: lighten(gray, 20%);
     animation: hover 750ms infinite alternate ease-in-out;
-  }
-}
-
-@keyframes hover {
-  from {
-    transform: translateY(0.2em);
-  }
-  to {
-    color: translateY(-0.2em);
   }
 }
 
@@ -157,14 +119,3 @@ canvas {
       }
     }
   }
-
-@keyframes spinmerightround {
-  0% {
-    color: pink;
-    transform: rotate(0deg);
-  }
-  100% {
-    color: $accent;
-    transform: rotate(720deg);
-  }
-}
