@@ -30,11 +30,10 @@
   cursor: pointer;
   outline: none;
   transition: $transition;
-  opacity: 0.8;
   &:hover {
     background-color: rgba(255, 255, 255, .95);
     box-shadow: 0 3px 10px -1px $accent;
-    opacity: 1;
+    opacity: 0.8;
   }
   &:active {
     transform: translateY(.1em);

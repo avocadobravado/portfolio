@@ -5,12 +5,11 @@
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(1.2);
   }
 }
 
 // From hero.scss, down button (currently not in use)
-
 @keyframes hover {
   from {
     transform: translateY(0.2em);
@@ -21,7 +20,6 @@
 }
 
 // From hero.scss, spin effect on social media icons
-
 @keyframes spinmerightround {
   0% {
     color: $pink;
