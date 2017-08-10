@@ -9,13 +9,9 @@ nav {
   -webkit-transition: .13s all;
   transition: .13s all;
   box-shadow: 1px 1px 1px 1px #ddd;
-  @include xs-breakpoint {
-    .left {
-      display: none;
-    }
   }
   .left {
-    font-size: 1.8em;
+    font-size: 1.6em;
     .bud {
       color: #ea4944;
     }
@@ -23,6 +19,10 @@ nav {
       color: #326d32;
     }
   }
+  @include xs-breakpoint {
+    .left {
+      display: none;
+    }
 }
 
 nav,
@@ -49,4 +49,12 @@ nav ul li {
 
 nav li:first-child {
   margin-right: auto;
+}
+
+// Special media query for Home link on small screens
+
+@media screen and (min-width: 550px) {
+  .home {
+    display: none;
+  }
 }

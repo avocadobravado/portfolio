@@ -41,7 +41,7 @@ function Circle(x, y, xVelocity, yVelocity, radius, color) {
   }
 }
 
-for (var i = 0; i < 50; i++) {
+for (var i = 0; i < 55; i++) {
   var radius = 4;
   var x = Math.random() * (innerWidth - radius * 1) + radius;
   var y = Math.random() * (innerHeight - radius * 1) + radius;

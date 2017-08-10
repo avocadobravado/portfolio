@@ -25,3 +25,4 @@ Done section: 🖖
 * Media queries for navigation
 * Add more circles to HTML canvas
 * Add random color to HTML canvas circles
+* Home link for small screen size in navigation
