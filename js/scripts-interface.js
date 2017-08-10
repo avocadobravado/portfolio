@@ -1,47 +1,27 @@
 window.onload = function() {
 
+// Variables
 var canvas = document.querySelector('canvas');
+var c = canvas.getContext('2d');
+var colors = ['#FEAC5E', '#4BC0C8', '#d687b1', '#663399'];
+var circleArray = [];
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var c = canvas.getContext('2d');
-
-
-// Draw an x function
-canvas.addEventListener("mouseup", mouseUp, false);
-canvas.addEventListener("mouseup", mouseUp, false);
-
-function drawX(x, y) {
-    c.beginPath();
-
-    c.moveTo(x - 1, y - 1);
-    c.lineTo(x + 1, y + 1);
-    c.stroke();
-
-    c.moveTo(x + 1, y - 1);
-    c.lineTo(x - 1, y + 1);
-    c.stroke();
-}
-
-function mouseUp(e) {
-    mouseX = e.pageX - canvas.offsetLeft;
-    mouseY = e.pageY - canvas.offsetTop;
-    drawX(mouseX, mouseY);
-}
-
 // Circle object
-function Circle(x, y, xVelocity, yVelocity, radius) {
+function Circle(x, y, xVelocity, yVelocity, radius, color) {
   this.x = x;
   this.y = y;
   this.xVelocity = xVelocity;
   this.yVelocity = yVelocity;
   this.radius = radius;
+  this.color = color;
 
   this.draw = function() {
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-    c.fillStyle = "#663399";
+    c.fillStyle = this.color;
     c.fill();
   }
 
@@ -59,47 +39,43 @@ function Circle(x, y, xVelocity, yVelocity, radius) {
 
     this.draw();
   }
-
 }
 
-var circleArray = [];
-
-for (var i = 0; i < 40; i++) {
+for (var i = 0; i < 50; i++) {
   var radius = 4;
   var x = Math.random() * (innerWidth - radius * 1) + radius;
   var y = Math.random() * (innerHeight - radius * 1) + radius;
-  var yVelocity = (Math.random() - .8) * .3;
-  var xVelocity = (Math.random() - .8) * .3;
+  var yVelocity = (Math.random() - 2) * .1;
+  var xVelocity = (Math.random() - 1) * .5;
+  var color = colors[Math.floor(Math.random()*colors.length)];
 
-  circleArray.push(new Circle(x, y, yVelocity, xVelocity, radius));
+  circleArray.push(new Circle(x, y, yVelocity, xVelocity, radius, color));
 }
 
 function animate () {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, innerWidth, innerHeight);
-
   for (var i = 0; i < circleArray.length; i++) {
     circleArray[i].update();
   }
-
 }
 
 animate();
 }
 
-/// Smooth navigation scrolling effect
+// Smooth navigation scrolling effect
 
 $(document).ready(function(){
   $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(function() {
-  		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-  			var target = $(this.hash);
-  			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-  			if (target.length) {
-  				$('html,body').animate({
-  					scrollTop: target.offset().top
-  				}, 1000);
-  				return false;
-  			}
-  		}
-  	});
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
 });

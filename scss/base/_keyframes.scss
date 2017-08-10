@@ -1,33 +1,11 @@
-// From hero.scss, pink circle animation
-
-@keyframes secondary-hero {
-  0% {
-    transform: scale(1) translateX(10vw);
-  }
-  25% {
-    transform: translateY(20vw);
-  }
-  50% {
-    transform: translateX(30vw) scale(.9);
-  }
-  75% {
-    transform: translateY(50vw);
-  }
-  100% {
-    transform: translateX(10vw) scale(1);
-  }
-}
-
 // From hero.scss, canvas rotation
 @keyframes fade {
   0% {
-    transform: rotate(0deg);
-    opacity: .2;
+    transform: scale(1);
   }
 
   100% {
     transform: rotate(360deg);
-    opacity: .1;
   }
 }
 
