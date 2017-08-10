@@ -34,10 +34,16 @@
       }
       .about-info-right {
         @include grid-column(3);
-        img {
+        .image-wrapper {
+          // width: 110%;
           border-radius: 50%;
-          max-width: 100%;
-          border: 5px solid $accent;
+          background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+          .photo {
+            border-radius: 50%;
+            max-width: 99%;
+            // border: 5px solid $blue;
+            margin: 1.5% 1%;
+          }
         }
         @include xs-breakpoint {
           @include grid-column(12);
@@ -79,6 +85,9 @@
           font-size: 1.1em;
           font-family: $header;
           // color: $accent;
+          .col-img {
+            width: 40px;
+          }
         }
         ul {
           padding: 0;

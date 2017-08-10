@@ -1,3 +1,4 @@
+// HTML Canvas
 window.onload = function() {
 
 // Variables
@@ -45,8 +46,8 @@ for (var i = 0; i < 55; i++) {
   var radius = 4;
   var x = Math.random() * (innerWidth - radius * 1) + radius;
   var y = Math.random() * (innerHeight - radius * 1) + radius;
-  var yVelocity = (Math.random() - 2) * .1;
-  var xVelocity = (Math.random() - 1) * .5;
+  var yVelocity = (Math.random() - .005) * .1;
+  var xVelocity = (Math.random() - .5) * .3;
   var color = colors[Math.floor(Math.random()*colors.length)];
 
   circleArray.push(new Circle(x, y, yVelocity, xVelocity, radius, color));
@@ -64,7 +65,6 @@ animate();
 }
 
 // Smooth navigation scrolling effect
-
 $(document).ready(function(){
   $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
