@@ -14,14 +14,40 @@
     font-size: $lg-font;
   }
   .project-wrapper {
+    h2, h3 {
+      margin-top: 0;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
     @include grid-column(12);
     .project-left {
       @include grid-column (9);
-      background-color: mistyrose;
+      h2, h3 {
+        text-align: center;
+      }
+      h2 {
+        font-size: 2.5em;
+
+      }
+      h3 {
+        // font-style: italic;
+      }
+      // background-color: mistyrose;
+      img {
+        width: 100%;
+      }
     }
     .project-right {
       @include grid-column (3);
-      background-color: thistle;
+      ul {
+        li {
+          color: #666;
+          font-size: 0.85em;
+          line-height: 1.3em;
+        }
+      }
+      // background-color: thistle;
     }
   }
 }
