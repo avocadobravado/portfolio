@@ -9,8 +9,8 @@
     margin: 0 auto;
     padding: 0;
   }
-  @include xs-breakpoint {
-
+  @include large-breakpoint {
+    font-size: $lg-font;
   }
   .work-wrapper {
     max-width: 960px;
@@ -29,6 +29,10 @@
     justify-content: center;
     width: 100%;
     .work-grid {
+      @include large-breakpoint {
+        width: $lg-container;
+        margin: 0 50%;
+      }
       .project {
         padding-bottom: 1%;
         position: relative;
@@ -45,6 +49,9 @@
           display: block;
           margin: 0 auto;
           transition: $transition;
+          @include large-breakpoint {
+            width: 95%;
+          }
           &:hover {
             box-shadow: 1px 1px 12px 1px lighten(gray, 25%);
           }

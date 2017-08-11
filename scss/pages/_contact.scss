@@ -15,6 +15,10 @@
     align-items: center;
     justify-content: center;
     max-width: 960px;
+    @include large-breakpoint {
+      width: $lg-container;
+      font-size: $lg-font;
+    }
     .bottom-icons {
       width: 200px;
       ul {

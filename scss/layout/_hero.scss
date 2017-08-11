@@ -21,6 +21,9 @@
     @include xs-breakpoint {
       font-size: 2.5em;
     }
+    @include large-breakpoint {
+      font-size: 5em;
+    }
   }
 }
 canvas {

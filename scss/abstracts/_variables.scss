@@ -2,7 +2,6 @@
 $white: #fafafa; // Whiteish
 $black: #333; // Blackish
 $headline: #424a6d; // Dark blue
-// $accent: darken(rebeccapurple, 10%);
 $accent: rebeccapurple;
 $orange: #FEAC5E;
 $blue: #4BC0C8;
@@ -25,3 +24,10 @@ $letter-spacing: .0075em;
 $xs-bp: "only screen and (max-width: 550px)";
 $small-bp: "only screen and (max-width: 800px)";
 $medium-bp: "only screen and (max-width: 958px)";
+$large-bp: "only screen and (min-width: 1600px)";
+
+// Styles for $large-bp
+
+//Width of containers for $large-bp
+$lg-container: 1300px;
+$lg-font: 1.3em;

@@ -50,6 +50,10 @@
     margin: 0 auto;
     color: white;
     background-color: $accent;
+    @include large-breakpoint {
+      width: 225px;
+      padding: 25px 40px;
+    }
     &:hover {
       background-color: lighten($accent, 10%);
       box-shadow: 0 2px 10px -1px darken($accent, 10%);

@@ -9,14 +9,16 @@
     @include small-breakpoint {
       margin: 0 auto;
     }
+    @include large-breakpoint {
+      max-width: $lg-container;
+      font-size: $lg-font;
+    }
     h2 {
       font-size: 2.2em;
-
       margin-bottom: 0;
     }
     h4 {
       font-size: .925em;
-      // color: $blue;
     }
     @include small-breakpoint {
       margin: 0 auto;
@@ -35,13 +37,11 @@
       .about-info-right {
         @include grid-column(3);
         .image-wrapper {
-          // width: 110%;
           border-radius: 50%;
           background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
           .photo {
             border-radius: 50%;
             max-width: 99%;
-            // border: 5px solid $blue;
             margin: 1.5% 1%;
           }
         }
