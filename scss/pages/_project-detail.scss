@@ -1,0 +1,47 @@
+#project {
+  // background-color: tomato;
+  height: 100%;
+  max-width: 960px;
+  margin: 10vh auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include small-breakpoint {
+    margin: 0 auto;
+  }
+  @include large-breakpoint {
+    max-width: $lg-container;
+    font-size: $lg-font;
+  }
+  .project-wrapper {
+    @include grid-column(12);
+    .project-left {
+      @include grid-column (9);
+      background-color: mistyrose;
+    }
+    .project-right {
+      @include grid-column (3);
+      background-color: thistle;
+    }
+  }
+}
+
+//
+// <div id="project">
+//   <div class="project-wrapper">
+//     <div class="project-left">
+//       <h2>Some dang project</h2>
+//       <h3>A little more about this project</h3>
+//       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+//     </div>
+//     <div class="project-right">
+//       <h3>Some stuff</h3>
+//       <ul>
+//         <li>Hi</li>
+//         <li>Hi</li>
+//         <li>Hi</li>
+//         <li>Hi</li>
+//         <li>Hi</li>
+//       </ul>
+//     </div>
+//   </div>

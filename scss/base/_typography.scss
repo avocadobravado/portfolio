@@ -9,11 +9,14 @@ body {
 
 p {
   line-height: 25px;
+  @include large-breakpoint {
+    line-height: 30px;
+  }
 }
 
 a {
   text-decoration: none;
-  color: whitesmoke;
+  color: $white;
 }
 
 li {
@@ -25,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3em;
 }
 
-// Nav
+// Navigation
 .nav-style
   {
   transition: all 0.2s ease-in-out;
