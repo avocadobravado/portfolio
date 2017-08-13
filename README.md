@@ -5,10 +5,11 @@ Notes to self:
 
 Design:
 * Favicon
+* HR styles
 
 Develop:
 * Project details page
-* Fix gradient border in ABout section
+* Fix gradient border in About section
 
 Other:
 * Write copy for project details
