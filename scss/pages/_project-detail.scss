@@ -1,13 +1,48 @@
+.next-prev-wrapper {
+  margin: 25px auto 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 960px;
+  height: 100%;
+  @include large-breakpoint {
+    max-width: $lg-container;
+    font-size: $lg-font;
+  }
+  @include small-breakpoint {
+    justify-content: center;
+  }
+  a {
+    font-weight: bold;
+    color: $accent;
+    transition: $transition;
+    &:hover {
+      color: $blue;
+    }
+  }
+  .next-prev {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin-right: 50px;
+    font-size: 0.8em;
+    span {
+      color: $blue;
+    }
+    @include small-breakpoint {
+      margin-right: 0;
+    }
+  }
+}
+
 #project {
-  // background-color: tomato;
   height: 100%;
   max-width: 960px;
-  margin: 10vh auto 0 auto;
+  margin: 25px auto 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   @include small-breakpoint {
-    margin: 0 auto;
+    margin: 20px auto;
   }
   @include large-breakpoint {
     max-width: $lg-container;
@@ -17,8 +52,14 @@
     h2, h3 {
       margin-top: 0;
     }
-    h2 {
+    h2, h4 {
       margin-bottom: 0;
+    }
+    h3 {
+      font-size: 1.25em;
+    }
+    h4 {
+      font-size: 1.2em;
     }
     @include grid-column(12);
     .project-left {
@@ -31,11 +72,18 @@
 
       }
       h3 {
-        // font-style: italic;
       }
-      // background-color: mistyrose;
       img {
         width: 100%;
+      }
+      .project-links {
+        width: 280px;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px auto 0 auto;
+      }
+      @include small-breakpoint {
+        @include grid-column(12);
       }
     }
     .project-right {
@@ -44,30 +92,17 @@
         li {
           color: #666;
           font-size: 0.85em;
-          line-height: 1.3em;
+          line-height: 1.4em;
+          a {
+            font-weight: bold;
+            color: $accent;
+            transition: $transition;
+            &:hover {
+              color: $blue;
+            }
+          }
         }
       }
-      // background-color: thistle;
     }
   }
 }
-
-//
-// <div id="project">
-//   <div class="project-wrapper">
-//     <div class="project-left">
-//       <h2>Some dang project</h2>
-//       <h3>A little more about this project</h3>
-//       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-//     </div>
-//     <div class="project-right">
-//       <h3>Some stuff</h3>
-//       <ul>
-//         <li>Hi</li>
-//         <li>Hi</li>
-//         <li>Hi</li>
-//         <li>Hi</li>
-//         <li>Hi</li>
-//       </ul>
-//     </div>
-//   </div>

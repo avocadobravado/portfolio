@@ -60,3 +60,20 @@
     }
   }
 }
+
+// Project detail buttons
+
+.project-links {
+  button {
+    @extend .form-button;
+    padding: 12px 18px;
+    width: 130px;
+    color: $white;
+    font-size: 0.9em;
+    background-color: $accent;
+  &:hover {
+    background-color: lighten($accent, 10%);
+    box-shadow: 0 2px 10px -1px darken($accent, 10%);
+    }
+  }
+}
