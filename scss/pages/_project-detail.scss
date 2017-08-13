@@ -70,11 +70,15 @@
       h2 {
         font-size: 2.5em;
       }
-      img {
+      .main-img {
         width: 100%;
       }
+      .secondary-img {
+        width: 75%;
+        margin: 0 12.5%;
+      }
       .project-links {
-        width: 280px;
+        width: 260px;
         display: flex;
         justify-content: space-between;
         margin: 20px auto 0 auto;

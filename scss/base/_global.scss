@@ -2,3 +2,9 @@
   background-color: $pink;
   color: $white;
 }
+
+hr {
+   border: 0;
+   height: 2px;
+   background-image: linear-gradient(to right, $orange, $pink, $purple, $blue);
+}
