@@ -69,9 +69,6 @@
       }
       h2 {
         font-size: 2.5em;
-
-      }
-      h3 {
       }
       img {
         width: 100%;
@@ -88,6 +85,9 @@
     }
     .project-right {
       @include grid-column (3);
+      @include small-breakpoint {
+        @include grid-column (12);
+      }
       ul {
         li {
           color: #666;
@@ -100,9 +100,18 @@
             &:hover {
               color: $blue;
             }
-          }
+          } // A
+        } // Li
+      } // Ul
+      .project-col {
+      @include small-breakpoint {
+        @include grid-column (4);
         }
-      }
-    }
+      @include xs-breakpoint {
+        @include grid-column (12);
+        margin: 0;
+        }
+      } // Project-col
+    } // Project right
   }
 }

@@ -12,11 +12,14 @@ nav {
   }
   .left {
     font-size: 1.6em;
+    -webkit-text-stroke-width: .5px;
+    font-family: $rose;
+    transform: skewX(-3deg);
     .bud {
-      color: #ea4944;
+      color: $bud;
     }
     .green {
-      color: #326d32;
+      color: $stem;
     }
   }
   @include xs-breakpoint {
