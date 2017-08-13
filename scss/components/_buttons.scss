@@ -64,9 +64,10 @@
 // Project detail buttons
 
 .project-links {
-  button {
+  a {
     @extend .form-button;
     padding: 10px;
+    margin: 0 3px;
     width: 120px;
     color: $white;
     font-size: 0.9em;

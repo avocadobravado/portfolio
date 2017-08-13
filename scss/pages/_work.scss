@@ -53,7 +53,7 @@
             width: 95%;
           }
           &:hover {
-            box-shadow: 1px 1px 12px 1px lighten(gray, 25%);
+            box-shadow: $box-shadow;
           }
         }
         .responsive-image {
