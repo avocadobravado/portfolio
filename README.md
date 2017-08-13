@@ -5,12 +5,8 @@ Notes to self:
 
 Design:
 * Favicon
-* Finalize colors
-* Finalize fonts
-* Wireframe project details page
 
 Develop:
-* Back to top button?
 * Project details page
 * Fix gradient border in ABout section
 
@@ -27,3 +23,6 @@ Done section: 🖖
 * Add random color to HTML canvas circles
 * Home link for small screen size in navigation
 * Icons for skills
+* Finalize colors
+* Finalize fonts
+* Wireframe project details page
