@@ -61,6 +61,14 @@
     h4 {
       font-size: 1.2em;
     }
+    a {
+      color: $accent;
+      transition: $transition;
+      font-weight: bold;
+      &:hover {
+        color: $blue;
+      }
+    }
     @include grid-column(12);
     .project-left {
       @include grid-column (9);
