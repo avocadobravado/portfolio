@@ -56,11 +56,35 @@
             <h4>About Rose City Zoo</h4>
             <hr>
 
-            <p>Rose City Zoo is a web application built with AngularJS and TypeScript with full CRUD capabilities. The site has two purposes: the first is to display the zoo's animal information in a child-friendly way, with bright colors, playful animations, and simple language. The second is for zoo staff to be able to manage the site's information, which includes editing animal data (name, age, likes, dislikes, etc.), as well as adding new and deleting animals from the application.</p>
+            <p>Rose City Zoo is a web application built with AngularJS and TypeScript with full CRUD (Create, Read, Update, Delete) capabilities. The site has two purposes: the first is to display the zoo's animal information in a child-friendly way, with bright colors, playful animations, and simple language. The second is for zoo staff to be able to manage the site's content, which includes editing animal data (name, age, likes, dislikes, etc.), as well as adding new and deleting animals from the application.</p>
 
             <h4>Process</h4>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Rose City Zoo was built within 8 hours after I had covered Angular concepts for 4 days. The app was developed before I knew that the best practice for structuring an Angular app was to give each component its own HTML, TypeScript, and CSS files, so all the HTML is written directly into the TypeScript files. The Angular structure of Rose City Zoo is as follows:</p>
+            <ul>
+              <li><strong>Model:</strong></li>
+              <li>Animal (for animal information: species, name, age, diet, location, caretakers, sex, likes, dislikes, fun fact, and popularity)</li>
+            </ul>
+
+            <ul>
+              <li><strong>Entry point &amp; Root module:</strong></li>
+              <li>main.ts</li>
+              <li>app.module.ts</li>
+            </ul>
+
+            <ul>
+              <li><strong>Components:</strong></li>
+              <li>app.component.ts</li>
+              <li>animal-inventory.component.ts</li>
+              <li>edit-animal.component.ts</li>
+              <li>footer-layout.component.ts</li>
+              <li>nav-layout.component.ts</li>
+            </ul>
+
+            <ul>
+              <li><strong>Pipe:</strong></li>
+              <li>sorter.pipe.ts (for sorting each animal by its popularity. Sorry Arctic Fox, you didn't make the cut!)</li>
+            </ul>
 
             <a href="img/projects/zoo_info.png"><img src="img/projects/zoo_info.png" class="secondary-img" alt="Animal information Rose City Zoo"></a>
           </div><!--Project left closes-->
@@ -76,6 +100,7 @@
                 <li>TypeScript</li>
                 <li>Node, npm, Bower, Gulp</li>
                 <li>Adobe Illustrator</li>
+                <li><a href="http://freepik.com">Freepik</a> (for the vectors)</li>
               </ul>
             </div><!--Project col closes-->
             <div class="project-col">
