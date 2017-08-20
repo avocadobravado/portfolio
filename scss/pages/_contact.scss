@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     max-width: 960px;
+    margin: 0 auto;
     @include large-breakpoint {
       width: $lg-container;
       font-size: $lg-font;
@@ -60,9 +61,9 @@
       }
       input, textarea {
         padding: 7px 5px;
-        width: 100%;
+        width: 95%;
         display: block;
-        margin-bottom: 15px;
+        margin: 15px auto;
         border: 2px solid transparent;
         border-radius: $radius;
         outline: none;
