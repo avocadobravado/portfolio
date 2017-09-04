@@ -51,7 +51,7 @@
     background-color: $accent;
     @include large-breakpoint {
       width: 225px;
-      padding: 25px 40px;
+      padding: 20px 25px;
     }
     &:hover {
       background-color: lighten($accent, 10%);
@@ -72,8 +72,9 @@
     font-size: 0.9em;
     background-color: $accent;
     @include large-breakpoint {
-      width: 180px;
+      font-size: 0.8em;
       padding: 15px;
+      width: 50%;
     }
   &:hover {
     background-color: lighten($accent, 10%);
