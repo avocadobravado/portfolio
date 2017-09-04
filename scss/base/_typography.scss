@@ -1,10 +1,14 @@
 // Global typography
+
+
 body {
   font-family: $primary;
   letter-spacing: $letter-spacing;
   overflow-x: hidden;
   font-size: 17px;
   color: $black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {

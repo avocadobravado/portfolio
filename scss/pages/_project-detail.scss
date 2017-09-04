@@ -31,6 +31,9 @@
     @include small-breakpoint {
       margin-right: 0;
     }
+    @include large-breakpoint {
+      font-size: .675em;
+    }
   }
 }
 
