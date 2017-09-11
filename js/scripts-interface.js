@@ -21,7 +21,7 @@ function Circle(x, y, xVelocity, yVelocity, radius, color) {
 
   this.draw = function() {
     c.beginPath();
-    c.arc(this.x * innerWidth, this.y * innerHeight, this.radius, 0, Math.PI * 2, false);
+    c.arc(this.x * canvas.width, this.y * canvas.height, this.radius, 0, Math.PI * 2, false);
     c.fillStyle = this.color;
     c.fill();
   }
@@ -35,8 +35,8 @@ function Circle(x, y, xVelocity, yVelocity, radius, color) {
       this.yVelocity = -this.yVelocity
     }
 
-    this.x += (this.xVelocity / innerWidth);
-    this.y += (this.yVelocity / innerHeight);
+    this.x += (this.xVelocity / canvas.width);
+    this.y += (this.yVelocity / canvas.height);
 
     this.draw();
   }
@@ -45,13 +45,10 @@ function Circle(x, y, xVelocity, yVelocity, radius, color) {
 for (var i = 0; i < 100; i++) {
   var radius = 4;
   var x = Math.random();
-  //  * (innerWidth - radius * 1)
-  //  + radius;
   var y = Math.random();
-  // * (innerHeight - radius * 1)
-  // + radius;
-  var yVelocity = (Math.random() - .005) * .1 * 200;
-  var xVelocity = (Math.random() - .5) * .3 * 200;
+  // Multiply by 2 - 1 to support left and downward velocities
+  var yVelocity = (Math.random() * 2 - 1) * .15;
+  var xVelocity = (Math.random() * 2 - 1) * .15;
   var color = colors[Math.floor(Math.random()*colors.length)];
 
   circleArray.push(new Circle(x, y, yVelocity, xVelocity, radius, color));
@@ -59,7 +56,7 @@ for (var i = 0; i < 100; i++) {
 
 function animate () {
   requestAnimationFrame(animate);
-  c.clearRect(0, 0, innerWidth, innerHeight);
+  c.clearRect(0, 0, canvas.width, canvas.height);
   for (var i = 0; i < circleArray.length; i++) {
     circleArray[i].update();
   }
@@ -67,6 +64,8 @@ function animate () {
 
 animate();
 }
+
+// JQUERY TIME
 
 // Smooth navigation scrolling effect
 $(document).ready(function(){
@@ -82,21 +81,19 @@ $(document).ready(function(){
 			}
 		}
 	});
-  //Get the canvas & context
-var c = $('#respondCanvas');
-var ct = c.get(0).getContext('2d');
-var container = $(c).parent();
 
-//Run function when browser resizes
-$(window).resize( respondCanvas );
+  // Resizing Canvas
+  var c = $('#respondCanvas');
+  var container = $(c).parent();
 
-function respondCanvas(){
-    c.attr('width', $(container).width() ); //max width
-    // c.attr('height', $(container).height() ); //max height
+  //Run function when browser resizes
+  $(window).resize(respondCanvas);
 
-    //Call a function to redraw other content (texts, images etc)
-}
+  function respondCanvas(){
+    c.attr('width', $(window).width() ); //max width
+    c.attr('height', $(window).height() ); //max height
+  }
 
-//Initial call
-respondCanvas();
+    //Initial call
+    respondCanvas();
 });
