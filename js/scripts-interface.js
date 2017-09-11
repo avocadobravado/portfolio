@@ -21,22 +21,22 @@ function Circle(x, y, xVelocity, yVelocity, radius, color) {
 
   this.draw = function() {
     c.beginPath();
-    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+    c.arc(this.x * innerWidth, this.y * innerHeight, this.radius, 0, Math.PI * 2, false);
     c.fillStyle = this.color;
     c.fill();
   }
 
   this.update = function() {
-    if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+    if (this.x > 1 || this.x < 0) {
       this.xVelocity = -this.xVelocity;
     }
 
-    if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+    if (this.y > 1 || this.y < 0) {
       this.yVelocity = -this.yVelocity
     }
 
-    this.x += this.xVelocity;
-    this.y += this.yVelocity;
+    this.x += (this.xVelocity / innerWidth);
+    this.y += (this.yVelocity / innerHeight);
 
     this.draw();
   }
@@ -44,10 +44,14 @@ function Circle(x, y, xVelocity, yVelocity, radius, color) {
 
 for (var i = 0; i < 100; i++) {
   var radius = 4;
-  var x = Math.random() * (innerWidth - radius * 1) + radius;
-  var y = Math.random() * (innerHeight - radius * 1) + radius;
-  var yVelocity = (Math.random() - .005) * .1;
-  var xVelocity = (Math.random() - .5) * .3;
+  var x = Math.random();
+  //  * (innerWidth - radius * 1)
+  //  + radius;
+  var y = Math.random();
+  // * (innerHeight - radius * 1)
+  // + radius;
+  var yVelocity = (Math.random() - .005) * .1 * 200;
+  var xVelocity = (Math.random() - .5) * .3 * 200;
   var color = colors[Math.floor(Math.random()*colors.length)];
 
   circleArray.push(new Circle(x, y, yVelocity, xVelocity, radius, color));
@@ -78,4 +82,21 @@ $(document).ready(function(){
 			}
 		}
 	});
+  //Get the canvas & context
+var c = $('#respondCanvas');
+var ct = c.get(0).getContext('2d');
+var container = $(c).parent();
+
+//Run function when browser resizes
+$(window).resize( respondCanvas );
+
+function respondCanvas(){
+    c.attr('width', $(container).width() ); //max width
+    // c.attr('height', $(container).height() ); //max height
+
+    //Call a function to redraw other content (texts, images etc)
+}
+
+//Initial call
+respondCanvas();
 });
