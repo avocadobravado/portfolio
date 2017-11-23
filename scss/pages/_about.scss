@@ -20,6 +20,13 @@
     h4 {
       font-size: .925em;
     }
+    a {
+      color: $accent;
+      transition: $transition;
+      &:hover {
+        color: $pink;
+      }
+    }
     @include small-breakpoint {
       margin: 0 auto;
     }
