@@ -21,8 +21,8 @@
   border: none;
   text-align: center;
   border-radius: 25px;
-  background-color: $white;
-  color: $accent;
+  background-color: $accent;
+  color: $white;
   font-weight: bold;
   padding: 15px 40px;
   margin: 0 auto;
@@ -30,9 +30,10 @@
   outline: none;
   transition: $transition;
   &:hover {
-    background-color: rgba(255, 255, 255, .95);
+    background-color: darken($accent, 15%);
     box-shadow: 0 3px 10px -1px $accent;
-    opacity: 0.8;
+    opacity: 0.9;
+    color: $white;
   }
   &:active {
     transform: translateY(.1em);

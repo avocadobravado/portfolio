@@ -108,6 +108,11 @@
         }
         @include xs-breakpoint {
           @include grid-column(12);
+          margin-top: 10vh;
+        }
+        @include small-breakpoint {
+          @include grid-column(12);
+          margin-top: 7vh;
         }
       }
     }

@@ -61,3 +61,11 @@ nav li:first-child {
     display: none;
   }
 }
+
+.mainNav {
+  &:hover {
+    color: $pink;
+    background-color: red;
+    opacity: .1;
+  }
+}
